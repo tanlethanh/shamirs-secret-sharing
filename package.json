@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A JS/TS implementation of Shamir's Secret Sharing in a finite field GF(2^8)",
   "repository": {
-    "url": "https://github.com/tanlethanh/shamirs-secret-sharing.git"
+    "url": "git+https://github.com/tanlethanh/shamirs-secret-sharing.git"
   },
   "files": [
     "src",
@@ -23,6 +23,7 @@
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build": "rimraf ./dist && tsc && yarn build:cjs && yarn build:esm",
+    "release": "yarn build && npm publish --access public",
     "test": "jest"
   },
   "devDependencies": {
@@ -41,7 +42,9 @@
     "typescript": "5.3.3"
   },
   "jest": {
-    "testMatch": ["**/src/**/*.test.ts"]
+    "testMatch": [
+      "**/src/**/*.test.ts"
+    ]
   },
   "author": "Tan Le",
   "license": "ISC",
