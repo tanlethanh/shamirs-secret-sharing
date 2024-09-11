@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["node", "@types/jest"],
     "lib": ["ESNext"]
   },
   "exclude": ["node_modules"]
