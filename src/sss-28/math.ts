@@ -45,8 +45,8 @@ export function gfInverse(a: number): number {
 	b = gfMul(b, b); // a^24
 	b = gfMul(b, b); // a^48
 	b = gfMul(b, c); // a^63
-	b = gfMul(b, c); // a^126
-	b = gfMul(b, a); // a^127
+	b = gfMul(b, b); // a^126
+	b = gfMul(a, b); // a^127
 	b = gfMul(b, b); // a^254
 
 	return b;
