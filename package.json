@@ -40,6 +40,9 @@
     "tsx": "^4.19.0",
     "typescript": "5.3.3"
   },
+  "jest": {
+    "testMatch": ["**/src/**/*.test.ts"]
+  },
   "author": "Tan Le",
   "license": "ISC",
   "packageManager": "yarn@4.4.1"
