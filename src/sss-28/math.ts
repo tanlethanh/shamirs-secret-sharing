@@ -18,12 +18,12 @@ export function gfMul(a: number, b: number): number {
 
 	let p = 0;
 
-	while (b) {
+	while (a && b) {
 		if (b & 1) p = p ^ a;
 		b = b >> 1;
 		const carry = a >> 7;
 		a = a << 1;
-		if (carry) a = a & 0x1b;
+		if (carry) a = a ^ 0x11b;
 	}
 
 	return p;
