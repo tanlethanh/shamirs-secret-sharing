@@ -47,6 +47,6 @@
     ]
   },
   "author": "Tan Le",
-  "license": "ISC",
+  "license": "MIT",
   "packageManager": "yarn@4.4.1"
 }
