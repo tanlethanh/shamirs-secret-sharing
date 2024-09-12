@@ -7,8 +7,6 @@
  * - Evaluating polynomial uses Horner's method
  */
 
-import { getRandomValues } from 'crypto';
-
 import { isUint8 } from '../utils/number';
 import { gfAdd, gfDiv, gfMul } from './math';
 
@@ -27,7 +25,7 @@ export function createRandomPolynomial(
 		coefficients: new Uint8Array(degree + 1),
 	};
 
-	getRandomValues(polynomial.coefficients);
+	crypto.getRandomValues(polynomial.coefficients);
 	polynomial.coefficients[0] = intercept;
 
 	return polynomial;

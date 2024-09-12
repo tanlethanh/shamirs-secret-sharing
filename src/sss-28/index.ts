@@ -1,5 +1,3 @@
-import { getRandomValues } from 'crypto';
-
 import { isUint8 } from '../utils/number';
 import {
 	createRandomPolynomial,
@@ -24,7 +22,7 @@ export function split(
 		throw Error("'numShares' can't less than 'threshold'");
 
 	const xs = new Uint8Array(numShares);
-	getRandomValues(xs);
+	crypto.getRandomValues(xs);
 
 	const shares: Share[] = new Array<Share>(numShares);
 	for (let i = 0; i < numShares; i++) {
