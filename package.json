@@ -1,7 +1,9 @@
 {
   "name": "@tanle/shamirs-secret-sharing",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A JS/TS implementation of Shamir's Secret Sharing in a finite field GF(2^8)",
+  "author": "Tan Le",
+  "license": "MIT",
   "repository": {
     "url": "git+https://github.com/tanlethanh/shamirs-secret-sharing.git"
   },
@@ -49,7 +51,5 @@
       "**/src/**/*.test.ts"
     ]
   },
-  "author": "Tan Le",
-  "license": "MIT",
   "packageManager": "yarn@4.4.1"
 }
